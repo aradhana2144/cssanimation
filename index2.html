@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+    <style type="text/css">
+        body{
+            background-color: orange;
+        }
+            #mainarea{
+                width: 1200px;
+                height: 1500px;
+                background: #66aae2;
+                margin: 0 auto;
+            }
+            #toparea{
+                width: 1200px;
+                height: 150px;
+                background: #d44ac9;
+
+            }
+            #logoarea{
+                width: 150px;
+                height: 150px;
+                background: #250050;
+                float: left;
+            }
+            #titlearea{
+                width: 1050px;
+                height: 150px;
+                background: lime;
+                float: left;
+            }
+            #menuarea{
+                width: 1200px;
+                height: 40px;
+                background:#e0f008;
+
+            }
+         
+            #slidearea{
+                width: 1200px;
+                height: 300px;
+                background: white;
+                float: left;
+                overflow: hidden;
+            }
+            #slidearea1{
+                width: 1000px;
+                height: 200px;
+                background: darkblue;
+                position: relative;
+                left: 100px;
+                top: 50px;
+                
+            }
+            @keyframes mjsr{
+                0%{
+                   
+                }
+                50%{
+                    transform: translatex(1000px);
+                    border-radius: 50%;
+                    background-color: #6bddea;
+                }
+                100%{
+                    transform: translate(1000px,200px);
+                }
+            }
+            #slidearea .square{
+                animation-name: mjsr;
+                animation-duration: 4s;
+            }
+            .square{
+                width: 100px;
+                height: 100px;
+                background-color: #c56464;
+                margin: 20px 30px;
+            }
+            #darea{
+                width: 1200px;
+                height: 300px;
+                background: #647ffa;
+                float: left;
+
+            }
+            #darea1{
+                width: 500px;
+                height: 200px;
+                background: orange;
+                float: left;
+                margin:50px;
+
+            }
+            #darea2{
+                width: 500px;
+                height: 200px;
+                background: coral;
+                float: left;
+                margin:50px;
+
+            }
+            #boxarea{
+                width: 1200px;
+                height: 300px;
+                background: #e028b2;
+                float: left;
+
+            }
+            .boxarea1{
+                width: 300px;
+                height: 200px;
+              
+                float: left;
+                margin:50px;
+                position: relative;
+
+            }
+            .boxarea1 img{
+                width: 100%;
+                height: 100%;
+                /*transition-property: transform;
+                transition-duration: 4s;
+                transition-delay: 1s;*/
+                /*transition: transform 4s,opacity 2s;*/
+                transition: all 4s;
+            
+            }
+            .boxarea1 img:hover{
+               /* transform: rotate(30deg); 
+               transform: scale(0.8,0.8)
+               transform: translate(75px,50px);
+               transform: translatey(-50px);
+               transform: skew(30deg,0);
+               transform: skew(-30deg,0);
+               transform: skew(0,30deg);
+               transform: skew(0,-30deg);*/
+               transform: scale(1.4,1.4) rotate(10deg);
+               opacity: 0.8;
+            }
+            .boxarea1{
+                overflow: hidden;
+            }
+            .details{
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                padding: 50px 0;
+                background: linear-gradient(transparent,#000);
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            
+           #footerarea{
+                width: 1200px;
+                height: 410px;
+                background: #043d92;
+                float: left;
+
+            }
+            #footerarea1{
+                width: 300px;
+                height: 410px;
+                background: gold;
+                float: left;
+
+            }
+            #footerarea2{
+                width: 300px;
+                height: 410px;
+                background: darkgreen;
+                float: left;
+
+            }
+            #footerarea3{
+                width: 300px;
+                height: 410px;
+                background: white;
+                float: left;
+
+            }
+            #footerarea4{
+                width: 300px;
+                height: 410px;
+                background: black;
+                float: left;
+
+            }
+            #rmenu{
+                width: 50px;
+                height: 300px;
+                background: burlywood;
+                position: fixed;
+                right: 0;
+                top: 200px;
+                z-index: 1000;
+            }
+        
+    </style>
+</head>
+<body>
+    <div id="rmenu">
+        aradhana
+    </div>
+    <div id="mainarea">
+        <div id="toparea">
+            <div id="logoarea">
+            </div>
+            <div id="titlearea">
+            </div>
+        </div>
+        <div id="menuarea">
+        </div>
+        <div id="slidearea">
+            <div class="square">
+
+            </div>
+
+        </div>
+        <div id="darea">
+            <div id="darea1">
+            </div>
+            <div id="darea2">
+            </div>
+        </div>
+        <div id="boxarea">
+            <div class="boxarea1">
+                <img src="2.jpg" alt="">
+                
+            </div>
+            <div class="boxarea1">
+                <img src="2.jpg" alt="">
+               
+            </div>
+            <div class="boxarea1">
+                <img src="2.jpg" alt="">
+               
+            </div>
+        </div>
+        <div id="footerarea">
+            <div id="footerarea1">
+            </div>
+            <div id="footerarea2">
+            </div>
+            <div id="footerarea3">
+            </div>
+            <div id="footerarea4">
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
