@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>animation</title>
+    <style type="text/css">
+        body{
+            /**/
+            background: rgb(168, 244, 150);
+            margin: 0;
+        }
+        #mainarea{
+            height: 900px;
+            
+        }
+        .background{
+            height: 900px;
+            background-image: url("bg.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .road{
+            width: 1200px;
+            height: 40px;
+           
+            
+            
+        }
+        @keyframes road{
+            0%{
+                transform: translatex(-300px);
+            }
+            100%{
+                transform: translatex(1200px)
+            }
+        }
+        .road img{
+            padding-top: 300px;
+            animation-name: road;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainarea">
+        <div class="background">
+            <div class="road">
+                <img src="1.gif" alt="">
+                <img src="2.gif" alt="">
+                <img src="3.gif" alt="">
+                <img src="4.gif" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
